@@ -13,4 +13,5 @@ It help's keep track of the ip addresses of multiple systems which could be geog
 It could help with managing cctv setups, where cameras are connected to a local network, with the server connecting both locally and to the internet, providing better privacy, security, and retaining remote connectablity.
 
 Setup tips:
-Be sure to rename "settings Template.ini" to "settings.ini", and ensure to place it in the same folder as "Client.exe" , configure the settings as desired but keep the layout as it is.
+For client be sure to rename "settings Template.ini" to "settings.ini", and ensure to place it in the same folder as "Client.exe" , configure the settings as desired but keep the layout as it is.
+For server rename "settings Template.php" to "settings.php", and either place it with "ip.php" or somewhere else as long as you change the path in "ip.php"
