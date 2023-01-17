@@ -40,7 +40,7 @@ namespace Client
             {
                 try
                 {
-                    ipRequest = webclient.DownloadString("https://checkip.amazonaws.com/").Trim();//getting our ip or retrying to the get ip :)
+                    ipRequest = webclient.DownloadString("https://checkip.amazonaws.com/").Trim();//getting our ip, you can use any public ip reporting api
                 }
                 catch (Exception ex)
                 {
