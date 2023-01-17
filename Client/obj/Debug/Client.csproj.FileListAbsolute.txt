@@ -1,0 +1,6 @@
+D:\Users\Breach\Documents\GIT\IP Get\Client\bin\Debug\Client.exe
+D:\Users\Breach\Documents\GIT\IP Get\Client\bin\Debug\Client.pdb
+D:\Users\Breach\Documents\GIT\IP Get\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\Users\Breach\Documents\GIT\IP Get\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Users\Breach\Documents\GIT\IP Get\Client\obj\Debug\Client.exe
+D:\Users\Breach\Documents\GIT\IP Get\Client\obj\Debug\Client.pdb
