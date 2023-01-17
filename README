@@ -11,3 +11,6 @@ The client communicates to the server the ip of the machine, and the server keep
 How is it useful?
 It help's keep track of the ip addresses of multiple systems which could be geographically seperated.
 It could help with managing cctv setups, where cameras are connected to a local network, with the server connecting both locally and to the internet, providing better privacy, security, and retaining remote connectablity.
+
+Setup tips:
+Be sure to rename "settings Template.ini" to "settings.ini", and ensure to place it in the same folder as "Client.exe" , configure the settings as desired but keep the layout as it is.
