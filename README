@@ -16,3 +16,4 @@ Setup tips:
 For client be sure to rename "settings Template.ini" to "settings.ini", and ensure to place it in the same folder as "Client.exe" , configure the settings as desired but keep the layout as it is.
 
 For server rename "settings Template.php" to "settings.php", and either place it with "ip.php" or somewhere else as long as you change the path in "ip.php"
+The server will need to have a database with at least two columns, "ip" and "user".
