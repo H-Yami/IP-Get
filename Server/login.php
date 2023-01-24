@@ -1,5 +1,4 @@
 <?php
-//ini_set(' session.save_path','/');
 require "settings.php"; //getting the database credintials
 if(empty($_POST['user'])) {  //checking if the username is passed or not
     //if not just stop
@@ -50,9 +49,8 @@ if(empty($_POST['user'])) {  //checking if the username is passed or not
                     $_SESSION['loggedin'] = TRUE;
                     $_SESSION['name'] = $user;
                     $_SESSION['id'] = $userId;
-                    echo($_SESSION['id']);
-                    //header('Location: clients.php');
-                    //die();
+                    header('Location: clients.php');
+                    die();
                 }else{
                  //incorrect password
                  echo("username or password is incorrect") ;
