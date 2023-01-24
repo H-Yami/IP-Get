@@ -1,0 +1,14 @@
+body {
+    background-color: #131516;
+    position: relative;
+    
+}
+
+.btn-primary {
+    background-color: #c60063;
+    border-color: #c60063;
+}
+.btn-secondary {
+    background-color: transparent;
+    border-color: #3f3f3f;
+}

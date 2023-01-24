@@ -4,12 +4,6 @@ header("Content-type: text/plain"); //data shall be proccessed as plain text
 
 require "settings.php"; //importing database credentials
 
-
-
-
-
-//$settings = readfile("settings");
-//echo ($settings);
 if(empty($_SERVER['REMOTE_ADDR'])) {  //checking if the ip address is passed or not
 //if not just stop
 } else {
@@ -33,9 +27,11 @@ if(empty($_SERVER['REMOTE_ADDR'])) {  //checking if the ip address is passed or 
             die("ERROR: Could not connect to the database. " . mysqli_connect_error());
         
         }
-        $prepStat = $con->prepare('INSERT INTO '.$tableName. ' (ip, user) VALUES (:ip, :user)');//preparing sql statement to lower chances of sql injection
+        $prepStat = $con->prepare('INSERT INTO '.$ipTable. ' (ip, user, time) VALUES (:ip, :user, :time)');//preparing sql statement to lower chances of sql injection
         $prepStat->bindValue(':ip', $ip);//binding values to the prepared statement
         $prepStat->bindValue(':user', $user);
+        $date = new DateTime(); //getting current date and time
+        $prepStat->bindValue(':time',($date -> format('Y-m-d H:i:s')));
         $prepStat->execute(); //executing the prepared sql statement
         echo ("Success"); 
     }
